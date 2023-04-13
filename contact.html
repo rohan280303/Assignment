@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" type="" href="css/contactstyle.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".header").css("position", "fixed");
+      });
+    </script>
+</head><script>
+  $(document).ready(function(){
+    $(".header").css("position", "fixed");
+  });
+</script>
+<body>
+  <div class="main-event">
+  <form action="https://formspree.io/f/xknapwzd" method="POST" id="contact" onsubmit="return validate()">
+    <h1>Contact Us</h1>
+      <div class="fish-name">
+      <a href="index.html"> SwordFish </a>
+</div>
+    <div class="form-row">
+      <div class="main-event">
+        <label>First Name:</label><br>
+        <input type="text" id="name"  placeholder="john"  onchange="validateName(this)" required>
+          <br>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="main-event">
+        <label>Last Name:</label><br>
+        <input type="text" id="lastname" name="lname" placeholder="doe" onchange="validateName(this)" required><br><br>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="main-event">
+        <label>Email:</label><br>
+        <input type="email" id="email" name="email" onchange="validateEmail(email)" required><br><br>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="main-event">
+        <label>DOB:</label><br>
+        <input type="date" id="date" name="date" onchange="validateDate(date)" required><br><br>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="main-event">
+        <label>Phone No:</label><br>
+        <input type="number" id="phone" name="number" onchange="validatePhone(phone)" required><br><br>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="main-event">
+        <label>Message:</label><br>
+        <input type="text" id="message" name="message" onchange="validateMessage(message)" required><br><br>
+      </div>
+    </div>
+    <div class="button-section">
+    <input type="submit" value="submit">
+      </div>
+  </form>
+</div>
+
+
+</body>
+</html>
